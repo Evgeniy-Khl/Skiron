@@ -1,0 +1,13 @@
+Debug/
+Exe/
+Linker/
+List/
+Obj/
+*.c~
+*.cbi
+*.cof
+*.cci
+*.h~
+*.hci
+*.fct
+*.prj~

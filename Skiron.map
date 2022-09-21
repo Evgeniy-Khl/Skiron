@@ -1,0 +1,82 @@
+RAM Allocation
+Variable                                                          Address   Size
+--------------------------------------------------------------------------------
+rx_buffer                                                         0x0480      64
+tx_buffer                                                         0x04C0      64
+newButton                                                         0x0500       1
+pointY                                                            0x0501       1
+error                                                             0x0502       1
+numMenu                                                           0x0503       1
+numSet                                                            0x0504       1
+displCO2                                                          0x0505       1
+timerCO2                                                          0x0506       1
+ptr_char                                                          0x0507       2
+setMenu                                                           0x0509      10
+setName0                                                          0x0513       8
+setName1                                                          0x051B       8
+setName2                                                          0x0523       8
+setName3                                                          0x052B      10
+max_X                                                             0x0535       2
+max_Y                                                             0x0537       2
+fillScreen                                                        0x0539       2
+pvT                                                               0x053B       2
+offsetT                                                           0x053D       2
+pvCO2                                                             0x053F       2
+newval                                                            0x0541      10
+alarm                                                             0x054B       4
+pvRH                                                              0x054F       1
+DHTexist                                                          0x0550       1
+offsetRH                                                          0x0551       1
+relOut                                                            0x0552       4
+buff                                                              0x0556      40
+familycode                                                        0x057E      27
+clock_buffer                                                      0x0599       7
+analogPV                                                          0x05A0       4
+analogOut                                                         0x05A4       4
+t                                                                 0x05A8       6
+ds                                                                0x05AE       8
+in                                                                0x05B6       4
+out                                                               0x05BA       4
+analog                                                            0x05BE       4
+relay                                                             0x05C2       4
+Told1                                                             0x05C6      20
+Told2                                                             0x05DA      20
+err                                                               0x05EE       1
+buttonCount                                                       0x05EF       1
+point_X                                                           0x05F0       2
+point_Y                                                           0x05F2       2
+point_Z                                                           0x05F4       2
+bottom_Y                                                          0x05F6       2
+buttons                                                           0x05F8      72
+try                                                               0x0640       1
+count1                                                            0x0641       2
+_seed                                                             0x0643       4
+
+EEPROM Allocation
+Variable                                                          Address   Size
+--------------------------------------------------------------------------------
+set                                                               0x0000      40
+tabRH                                                             0x0028     420
+
+Register Allocation
+Variable                                                          Register  Size
+--------------------------------------------------------------------------------
+rx_wr_index                                                       R5           1
+rx_rd_index                                                       R4           1
+rx_counter                                                        R7           1
+tx_wr_index                                                       R6           1
+tx_rd_index                                                       R9           1
+tx_counter                                                        R8           1
+rx_buffer_overflow                                                R2.0      1bit
+devices                                                           R11          1
+portOut                                                           R10          1
+displ_num                                                         R13          1
+newSetButt                                                        R12          1
+Sec                                                               R2.1      1bit
+Clock_Ok                                                          R2.2      1bit
+Dht                                                               R2.3      1bit
+Soil                                                              R2.4      1bit
+pHsensor                                                          R2.5      1bit
+typeS                                                             R2.6      1bit
+CO2module                                                         R2.7      1bit
+CheckCO2                                                          R3.0      1bit
