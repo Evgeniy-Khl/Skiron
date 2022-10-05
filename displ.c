@@ -55,7 +55,7 @@ void displ_0(void){
  unsigned char i, /*x, inttemp, frctemp*/;
  unsigned int fillWindow = BLUE1, bordWindow = BLACK, temp, X_left;
 //-------------------------------- Основные показатели микроклимата. ----------------------------------------------------------------------------
-  if (newSetButt){
+  if(newSetButt){
     newSetButt = 0;
     TFT_FillScreen(0, max_X, 0, max_Y, fillWindow);
     initializeButtons(4,1,25);// 4 колонки; одна строка; высота 25
@@ -102,7 +102,7 @@ void displ_0(void){
       TFT_DrawString("возду0",5,pointY+12,1,1,bordWindow,fillWindow);
       if (pvRH>100) sprintf(buff,"Bл= ***%%",pvRH);
       else sprintf(buff,"Bл= %2u%% ",pvRH);
-      TFT_DrawString(buff,80,pointY,2,0,bordWindow,fillWindow); 
+      TFT_DrawString(buff,80,pointY,2,1,bordWindow,fillWindow); 
       // индикация тревоги alarm[1]
       switch (alarm[1]) {
         case 0: temp=GREEN; break;

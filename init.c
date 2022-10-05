@@ -112,5 +112,6 @@ delay_ms(3000);
 //if(devices == 0) while (1) {delay_ms(500);};// если датчики не обнаружены - то останавливаем программу
 
 newSetButt = 1;
+newButton=100;
 temperature_check();
-display();
+//display();

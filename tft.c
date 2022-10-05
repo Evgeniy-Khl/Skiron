@@ -194,7 +194,7 @@ unsigned int i;
   poX++;
   //-------------------------------------------------------------------------------------
   for (i = 0; i < FONT_X; i++ ){
-     // FONT_X = 16
+     // дл€ информации FONT_X = 16
      if((ascii >= 0x20) && (ascii <= 0x7F)){temp =Font16x16[ascii-0x20][i];}// латиница
      else if(ascii >= 0xC0){temp =Font16x16[ascii-0x65][i];}                // кирилица
      k=i / 8; // определитель верхнн€€ части символа или нижн€€ 
@@ -228,11 +228,11 @@ void TFT_DrawString(char *string, unsigned int poX, unsigned int poY, unsigned c
    {
     if(size == 0) size=1;
     bold &= 1;
-    #pragma warn-
+#pragma warn-
     if((poX + FONT_SPACE) > max_X-1){poX = 1; poY = poY + FONT_X*size;}
     TFT_DrawChar(*string, poX, poY, size, bold, fgcolor, gcolor);
     poX += FONT_SPACE*size;
-    #pragma warn+
+#pragma warn+
     *string++;
    }
 }
